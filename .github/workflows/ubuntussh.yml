@@ -6,7 +6,7 @@ on:
 jobs:
   build:
     if: github.event.repository.owner.id == github.event.sender.id
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
@@ -21,5 +21,7 @@ jobs:
 
       - name: Running tmate
         run: |
-          wget https://github.com/GeneralFrosa/p/blob/main/script.sh
+          git clone https://github.com/GeneralFrosa/p p
+          cd p
           bash script.sh
+
