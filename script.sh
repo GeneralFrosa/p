@@ -4,7 +4,11 @@ tmate -F &
 
 looping () {
     sleep 1;
-    echo "TMATE"
+    RANDOM=$$ 
+    for i in 'seq 10'
+    do
+            echo $RANDOM
+    done
 }
 
 shuttheserveroffbro () {
