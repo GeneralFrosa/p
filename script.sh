@@ -3,7 +3,7 @@
 tmate -F &
 
 looping () {
-    sleep 2;
+    sleep 3;
     RANDOM=$$ 
     for i in 'seq 10'
     do
